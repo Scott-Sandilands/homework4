@@ -35,7 +35,7 @@
       text: transactionData.text,
       amount: transactionData.amount,
     })
-    saveToLacalStorage()
+    saveToLocalStorage()
   }
 
   const generateID = () => {
