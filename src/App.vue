@@ -44,10 +44,10 @@
 
   const handleDelete =(id) => {
     transactions.value = transactions.value.filter((x) => x.id !== id)
-    saveToLacalStorage()
+    saveToLocalStorage()
   }
 
-  const saveToLacalStorage = () =>{
+  const saveToLocalStorage = () =>{
     localStorage.setItem('transactions', JSON.stringify(transactions.value))
   }
 
